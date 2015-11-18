@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Opgave 3</title>
+</head>
+<body>
+	<script>
+		//variabelen aanmaken
+		var aankoopbedrag;
+		var totaalbedrag;
+		aankoopbedrag = prompt("Wat is het aankoopbedrag?", "Vul hier het aankoopbedrag in");
+		aankoopbedrag = parseFloat(aankoopbedrag);
+		alert(typeof(aankoopbedrag));
+
+		if(aankoopbedrag >= 25) {
+			alert(" Het totaal bedrag is " + aankoopbedrag + ". Je bestelling wordt gratis bezorgd!");
+		} else {
+			alert(" Het totaalbedrag incl. bezorgkosten is " + aankoopbedrag + 3.95);
+		}
+
+
+	</script>
+</body>
+</html>
