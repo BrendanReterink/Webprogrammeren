@@ -1,0 +1,385 @@
+body{
+	font-family: helvetica, arial;
+	margin: 0;
+}
+
+#loginlayout {
+	height: 200px;
+	width: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(54, 54, 54, 0.5)
+
+}
+
+#registreer {
+	height: 120px;
+	width: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(54, 54, 54, 0.5)
+}
+
+nav {
+	float: left;
+	width: 20%;
+	background: #f1f1f1;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+	margin-top: 70px;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 34px 0 0 0;
+    padding: 0;
+    background-color: #f1f1f1;
+	text-align: left;
+}
+
+
+li a {
+    display: block;
+    padding: 0;
+	color: #000;
+	padding: 8px 0 8px 16px;
+	text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover {
+    background-color: #0054ff;
+    color: white;
+ }
+
+header {
+	background: #0054ff;
+	height: 75px;
+	position: fixed;
+	overflow: auto;
+	width: 100%;
+	z-index: 10;
+	margin-top: 0px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 21px;
+}
+
+main {
+	float: right;
+	width: 80%;
+	margin-top: 75px;
+}
+
+/* Registreren */
+#voorvertoning{
+	margin-left: 550px;
+}
+
+img{
+    margin: 0px;
+    vertical-align: middle;
+    }
+
+.intro {
+	width: 700px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid#000;
+	margin-top: 50px;
+	padding-left: 5px;
+	background-color: #0054ff;
+}
+
+.info {
+	width: 200px;
+	height: 50px;
+	margin-left: 300px;
+	border: 1px solid#000;
+	padding-left: 5px;
+	background-color: #0054ff;
+}
+
+.invullen {
+	width: 650px;
+	height: 50px;
+	margin-left: 530px;
+	margin-top: -52px;
+	padding-left: 5px;
+}
+
+input[type="file"] {
+ 	width:240px;
+ 	height: 25px;
+ }
+
+
+#knop{
+	margin-left: 840px;
+	margin-top: 10px;
+	padding-left: 5px; 
+}
+
+.melding {
+	color: red;
+}
+.meldingwachtwoord { 
+	color: red;
+}
+.foutmelding {
+	color: red;
+}
+
+/* Timeline */
+.omslag {
+	width: 100%;
+	height: 250px;
+	background-color: #0054ff;
+}
+
+.berichten-plaatsen {
+	width: 100%;
+	height: 150px;
+	border-bottom: solid;
+	border-width: 1px;
+	text-align: center;
+	border-color: #eee;
+}
+
+#ribbitText{
+	width: 500px;
+	height: 100px;
+}
+
+#ribbitSubmit{
+	width: 100px;
+	height: 50px;
+}
+
+#fileInput{
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+#fileDisplayArea{
+	display: none;
+}
+
+.ribbitWrapper{
+	margin-left: 0px;
+	width: 750px;
+	min-height: 300px;
+	margin-bottom: 20px;
+	background-color: #f1eee9;
+	padding-left: 10px;
+	border-radius: 10px;
+	border-color: #eee
+}
+
+.kudosBar {
+	font-size: 14px;
+	color: #b84e6e !important;	
+	margin: 0px 50px 0px 90px !important;
+}
+
+.kudosCount {
+	color: #b84e6e !important;	
+}
+
+/* Lightbox */
+.backdrop{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity: .0;
+	filter:alpha(opacity=0);
+	z-index:50;
+	display:none;
+}
+ 
+.box{
+	position:absolute;
+	top:20%;
+	left:30%;
+	width:550px;
+	height:450px;
+	background:#ffffff;
+	z-index:51;
+	padding:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow:0px 0px 5px #444444;
+	-webkit-box-shadow:0px 0px 5px #444444;
+	box-shadow:0px 0px 5px #444444;
+	display:none;
+}
+ 
+.close{
+	float:right;
+	margin-right:6px;
+	cursor:pointer;
+}
+
+/* Vriendenlijst */
+.friends{
+	background-color: #f1eee9;
+	width: 850px;
+	height: 450px;
+	float: right;
+	margin-right: 80px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.plijst{
+	width: 100px;
+	height: 100px;
+}
+
+.Ffranky{
+	float: left;
+	margin-right: 10px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.Fmaw{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.Fhardwell{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.Fnina{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.Fnastia{
+	float: left;
+	margin-right: 20px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.voorgestelde{
+	background-color: #f1eee9;
+	width: 850px;
+	height: 290px;
+	float: right;
+	margin-right: 80px;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+
+.Prampa{
+	float: left;
+	margin-right: 10px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.Psam{
+	float: left;
+	margin-right: 20px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+/* Berichten */
+.chatvenster{
+	width: 850px;
+	min-height: 1800px;
+	background-color: #f1eee9;
+	margin-left: 0px;
+	border-radius: 10px;
+}
+
+.titel{
+	width: 850px;
+	background-color: #0054ff;
+}
+
+.ribbitBerichten{
+	border: 10px;
+	width: 650px;
+	height: 180px;
+	margin-bottom: 20px;
+	background-color: white;
+	padding-left: 10px;
+	float: left;
+	margin-left: 50px;
+}
+
+.ribbitWrapperrechtss{
+	float: right;
+	border: 10px;
+	border-color: black;
+	margin-left: 400px;
+	width: 750px;
+	min-height: 180px;
+	margin-bottom: 20px;
+	background-color: white;
+	padding-left: 10px;
+}
+
+.panelleftBerichten{
+	width: 650px;
+	height: 180px;
+	margin-left: 400px;
+	margin-top: -950px;
+}
+
+#fileInput{
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#invoer{
+	margin-top: 10px;
+	width: 350px;
+	height: 50px;
+	margin-left: 0px;
+	font-size: 20;
+}
+
+#ribbitSubmitBerichten{
+	float: right;
+	margin-right: 150px;
+	margin-top: 10px;
+	width: 100px;
+	height: 50px;
+}
+.meldinginvoer2{   
+	color: red;
+	width: 350px;
+	height: 30px;
+	margin-top: 70px;
+	margin-left: 30px;
+}
+
+/* Video */
+
+#videoContainer{
+	display:none;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> registreren </title>
+
+<meta name="keywords" content="Registreren">
+<meta name="description" content="Socialmedia webprogrammeren">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Brendan Reterink">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="Pagestyle.css">
+
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="registreren.js"> </script>
+
+</head>
+<body background="images/achtergrondsite2.jpg" alt="achtergrond">
+
+
+	<form>
+	<!--    Profielfoto selecteren    -->
+	<div id= "voorvertoning">
+		<img  src="images/profilepreview.jpg" height="200" alt="Image preview" >
+		<input type="file" onchange="previewFile()">
+		</div> <!--    Profielfoto     -->
+		
+
+
+	<div class="intro">
+		<p>Persoonlijke gegevens</p>
+	</div>
+	
+<!--    Gegevens invoeren    -->
+	<div class="info">  <!-- Welke informatie is er nodig -->
+		<p> Voornaam</p>
+	</div>
+	<div class="invullen">  <!--Invulvelden -->
+		<input type="text" id="voornaam" name="invoer" placeholder="Vul hier uw voornaam in.">
+		<span id="meldingvoornaam"> </span> <!-- meldingveld-->
+	</div>
+
+	<div class="info"> 
+		<p> Achternaam</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="achternaam" name="invoer" placeholder="Vul hier uw achternaam in.">
+		<span id="meldingachternaam"> </span>
+	</div>
+
+	<div class="info"> 
+		<p> Gebruikersnaam</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="gebruikersnaam" name="invoer" placeholder="Vul hier uw gebruikersnaam in.">
+		<span id="meldinggebruikersnaam"> </span>
+	</div>
+
+	<div class="info"> 
+		<p> Wachtwoord</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="wachtwoord" name="invoer" placeholder="Vul hier uw wachtwoord in.">
+		<span id="meldingwachtwoord"> </span>
+	</div>
+
+	<div class="info"> 
+		<p> Herhaal wachtwoord</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="herhalingwachtwoord" name="invoer" placeholder="Vul hier de herhaling van uw wachtwoord in.">
+		<span id="meldingherhalingwachtwoord"> </span>
+	</div>
+
+	<div class="intro">
+		<p> Dit wordt openbaar gemaakt aan uw vrienden.</p>
+	</div>
+
+	<div class="info"> 
+		<p> Geboortedatum</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="geboortedatum" name="invoer" placeholder="Vul hier uw geboortedatum in.">
+		<span id="meldinggeboortedatum"> </span>
+	</div>
+
+	<div class="info"> 
+		<p> Geboorteplaats</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="geboorteplaats" name="invoer" placeholder="Vul hier uw geboorteplaats in.">
+		<span id="meldinggeboorteplaats"> </span>
+	</div>
+
+	<div class="info"> 
+		<p>Woonplaats</p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="woonplaats" name="invoer" placeholder="Vul hier uw huidige woonplaats in.">
+		<span id="meldingwoonplaats"> </span>
+	</div>
+
+	<div class="info"> 
+		<p> Favoriete muziekgenres </p>
+	</div>
+	<div class="invullen">
+		<input type="text" id="intresses" name="invoer" placeholder="Vul hier uw favoriete muziekgenres in.">
+		<span id="meldingintresses"> </span>
+	</div>
+
+
+
+	<div id="knop">
+		<input type="button" id="knopaanmelden" value="Aanmelden" >
+	</div>
+</form>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Berichten</title>
+
+<meta name="keywords" content="berichten">
+<meta name="description" content="Socialmedia webprogrammeren">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Brendan Reterink">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="Pagestyle.css">
+
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="berichten.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="images/logo.jpg" alt="logo"/>
+	</header>		 
+
+<nav>
+		<ul>
+			<li><a href="inloggen.html"> Uitloggen </a></li>
+			<li><a href="timeline.html"> Tijdlijn </a> </li>
+			<li><a href="vrienden.html"> Vrienden </a> </li>
+			<li><a href="berichten.html"> Berichten </a> </li>
+		</ul>
+</nav>
+
+<main>
+
+	<div class="chatvenster">
+		<div class="titel"> <h2> Chat </h2> </div> 
+
+
+
+ 	<div id="timeline">
+ 		<!-- hier komen de updates  -->
+
+ 		<div class="ribbitBerichten"> <!-- berichten die al in de tijdlijn staan -->
+ 			<img src="images/profielfoto_brendan.jpg" alt="Brendan Reterink">
+ 			<span class="name"> Brendan Reterink zegt</span>
+ 			<span class="time"> 13 minuten geleden </span>
+ 			<p> Hey Nina, ken je nog goede House platen?
+			</p>
+ 		</div> <!-- einde tekstveld-->
+
+ 		<div class="ribbitWrapperrechtss"> <!-- berichten die al in de tijdlijn staan, geschreven door persoon zelf -->
+ 			<img  src="images/nina.jpg" alt="Nina Kraviz">
+ 			<span class="name"> Nina Kraviz zegt</span>
+ 			<span class="time"> 9 minuten geleden </span>
+ 			<p> Zeker! De nieuwe EP van Franky Rizardo is echt tof!
+			</p> 
+ 				<!-- lightbox van afbeelding-->
+			<a href="#" class="lightbox"><img src="images/defected.jpg" alt="Defected Records" ></a>
+			<div class="backdrop"></div>
+			<div class="box"><div class="close">x</div> <img src="images/defected_lightbox.jpg" alt="Defected Records" ></div>
+ 		</div> <!-- einde tekstveld-->
+
+ 		<div class="ribbitBerichten"> <!-- berichten die al in de tijdlijn staan -->
+ 			<img src="images/profielfoto_brendan.jpg" alt="Brendan Reterink">
+ 			<span class="name"> Brendan Reterink zegt</span>
+ 			<span class="time"> 3 minuten geleden </span>
+ 			<p> Wow je hebt gelijk! Weet zeker dat je dan het nieuwe album van Sonny Fodera ook tof gaat vinden! ;)
+			</p> 
+		</div> <!-- einde tekstveld-->
+
+ 	</div> <!-- einde timeline-->
+
+ 	</div> <!-- einde "chatvenster" -->
+
+ 	<!-- bericht versturen-->
+ 		<div id="ribbits" class="panelleftBerichten">
+	
+			<div id="videoContainer">
+    			<!-- de html voor video is verborgen met css -->
+   		 		<video id="myVideo" controls>
+     	 		<source  type="video/mp4">
+      	  			Your browser does not support the video tag.
+    			</video>
+  		 		<!-- en wordt alleen gebruikt om nieuwe video toe te voegen -->
+   		 		<!-- (dit is gemakkelijker dan de html met js of jQuery aanmaken) -->
+			</div>
+
+			<input type="file" id="fileInput" />
+			<input type="text" id="invoer" placeholder="Typ hier uw bericht" />
+			<input type="submit" id="ribbitSubmitBerichten" value="Verstuur bericht!">
+			<div class="meldinginvoer2"> </div>
+		
+		</div> <!-- einde ribbits / panelleftBerichten-->
+
+	
+</main>	
+</body>
+</html>

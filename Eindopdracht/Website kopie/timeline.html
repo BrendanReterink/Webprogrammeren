@@ -1,0 +1,155 @@
+<!DOCTYPE html>    
+<html>
+<head>
+<title> Timeline </title>
+
+<meta name="keywords" content="timeline">
+<meta name="description" content="Socialmedia webprogrammeren">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Brendan Reterink">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="Pagestyle.css">
+
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="timeline.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<img class="logo" src="images/logo.jpg" alt="logo beatpoort">
+	</header>		 
+
+<nav>
+		<ul>
+			<li><a href="inloggen.html"> Uitloggen </a></li>
+			<li><a href="timeline.html"> Tijdlijn </a> </li>
+			<li><a href="vrienden.html"> Vrienden </a> </li>
+			<li><a href="berichten.html"> Berichten </a> </li>
+		</ul>
+</nav>
+	
+	<main>
+
+	<div class="omslag">
+				<img src="images/omslag.jpg" alt="omslagfoto">
+			</div>
+
+<!-- Bericht plaatsen in timeline --> 
+ <div class="berichten-plaatsen">
+ 		<h2>Timeline</h2>
+		<input type="file" id="fileInput" />
+		<input type="text" id="ribbitText" placeholder="Wat wil je met je vrienden delen?" />
+		<input type="submit" id="ribbitSubmit" value="Versturen" />
+		<div class="meldinginvoer"> </div> 
+		<div id="fileDisplayArea">
+    		<img id="myImg"  />
+		</div>
+ 	</div>
+
+ 	<div id="timeline" class="panel left"> <!-- timeline-->
+		<!-- Updates in de timeline  -->
+
+ 		<div class="ribbitWrapper"> <!-- berichten die al in de tijdlijn staan -->
+ 			<img src="images/hardwell.jpg" alt="hardwell">
+ 			<span class="name"> DJ Hardwell zegt </span>
+ 			<span class="time"> 2 minuten geleden </span>
+ 			<a class="deleteRibbit" href="#"> Verwijder bericht</a>
+ 				<p> Morgen komt de preview van mijn nieuwe track online!
+ 				</p> 
+ 				<!-- lightbox maken van van de afbeelding-->
+			<a href="#" class="lightbox"><img src="images/revealed.jpg" alt="revealedmusic"> </a>
+			<div class="backdrop"></div>
+			<div class="box"><div class="close">x</div> <img  alt="revealedmusic" src="images/revealed_lightbox.jpg" ></div>
+ 
+ 			<p class="kudosBar">  <!-- de like knop -->
+ 			<span class="kudosCount">3</span>
+ 			 mensen vinden dit leuk (
+ 			<a href="#" class="thumbsUp"> Dit vind ik leuk</a>
+ 			/
+ 			<a href="#" class="thumbsDown"> Dit vind ik niet leuk</a>
+ 			) 
+ 			</p>
+ 			
+ 			<!-- reactie toevoegen -->
+				<div class="addComments">        
+					<input type="text" class="inputComment"/>
+					<button class="addComment">Voeg hier uw reactie toe</button>
+				</div>
+				<div class="comments">
+					<div class="comment">
+						<div class="message"></div>
+						<div class="commentControl">
+							<a href="#" class="removeComment"></a>
+						</div>
+					</div>
+				</div>
+ 			
+ 		</div> <!-- einde tekstveld-->
+
+ 		<div class="ribbitWrapper">
+ 			<img src="images/maw.jpg">
+ 			<span class="name"> Masters at Work zegt</span>
+ 			<span class="time"> 10 minuten geleden </span>
+ 			<a class="deleteRibbit" href="#"> Verwijder bericht</a>
+ 			<p> Our new EP just hit 2 in the Billboard Top 100!</p>
+ 			<p class="kudosBar">  <!-- de like knop -->
+ 			<span class="kudosCount">5</span>
+ 			 mensen vinden dit leuk (
+ 			<a href="#" class="thumbsUp"> Dit vind ik leuk</a>
+ 			/
+ 			<a href="#" class="thumbsDown"> Dit vind ik niet leuk</a>
+ 			) 
+ 			</p>
+ 				<div class="addComments">        <!-- reactie toevoegen-->
+						<input type="text" class="inputComment"/>
+						<button class="addComment">Voeg hier uw reactie toe</button>
+				</div>
+					<div class="comments">
+					<div class="comment">
+							<div class="message"></div>
+							<div class="commentControl">
+								<a href="#" class="removeComment"></a>
+							</div>
+						</div>
+					</div>
+ 			
+ 		</div> <!-- einde ribbitWrapper -->
+
+ 		<div class="ribbitWrapper">
+ 			<img src="images/frankyrizardo.jpg" >
+ 			<span class="name">Franky Rizardo zegt</span>
+ 			<span class="time"> 15 minuten geleden </span>
+ 			<a class="deleteRibbit" href="#"> Verwijder bericht</a>
+ 			<p>Vanavond sta ik in de AIR Amsterdam van 3 tot 5!</p>
+ 			<p class="kudosBar">  <!-- de like knop -->
+ 			<span class="kudosCount">20</span>
+ 			 mensen vinden dit leuk (
+ 			<a href="#" class="thumbsUp"> Dit vind ik leuk</a>
+ 			/
+ 			<a href="#" class="thumbsDown"> Dit vind ik niet leuk</a>
+ 			) 
+ 			</p>
+ 			<div class="addComments">        <!-- reactie toevoegen-->
+					<input type="text" class="inputComment"/>
+					<button class="addComment">Voeg hier uw reactie toe</button>
+				</div>
+				<div class="comments">
+					<div class="comment">
+						<div class="message"> Wow! Ik kom langs! </div>
+						<div class="commentControl">
+							<a href="#" class="removeComment"> Verwijder reactie</a>
+						</div>
+					</div>
+				</div>
+ 			
+ 		</div> <!-- einde ribbitWrapper -->
+	
+ 	</div> <!-- einde timeline / panel left-->
+</main>
+
+</body>
+</html>
+

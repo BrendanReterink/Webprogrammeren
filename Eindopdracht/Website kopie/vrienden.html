@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Vrienden</title>
+
+<meta name="keywords" content="friends">
+<meta name="description" content="Socialmedia webprogrammeren">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Brendan Reterink">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="Pagestyle.css">
+
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="vrienden.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="images/logo.jpg" alt="logo beatpoort">
+	</header>		 
+
+<nav>
+		<ul>
+			<li><a href="inloggen.html"> Uitloggen </a></li>
+			<li><a href="timeline.html"> Tijdlijn </a> </li>
+			<li><a href="vrienden.html"> Vrienden </a> </li>
+			<li><a href="berichten.html"> Berichten </a> </li>
+		</ul>
+</nav>
+
+	<main>
+
+		<div class="omslag">
+				<img src="images/omslag.jpg" alt="omslagfoto">
+		</div>
+
+<!-- Vriendelijst / verwijderen en toevoegen --> 
+	<div class="friends">
+		<div class="titel"> <h2> Mijn vrienden </h2> </div>
+
+			<div class="Ffranky">
+				<img src="images/frankyrizardo.jpg" alt="Franky Rizardo">
+				<p class="Flijst">Franky Rizardo</p>
+				<button type="button" id="delete1">Verwijder</button>
+			</div>
+
+			<div class="Fmaw">
+				<img src="images/maw.jpg" alt="Masters at Work">
+				<p class="Flijst">Masters at Work</p>
+				<button type="button" id="delete3">Verwijder</button>
+			</div>
+
+			<div class="Fhardwell">
+				<img src="images/hardwell.jpg" alt="Hardwell">
+				<p class="Flijst">Hardwell</p>
+				<button type="button" id="delete5">Verwijder</button>
+			</div>
+
+			<div class="Fnina">
+				<img src="images/nina.jpg" alt="Nina Kraviz">
+				<p class="Flijst">Nina Kraviz</p>
+				<button type="button" id="delete6">Verwijder</button>
+			</div>
+
+			<div class="Fnastia">
+				<img src="images/nastia.jpg" alt="Nastia">
+				<p class="Flijst">Nastia</p>
+				<button type="button" id="delete7">Verwijder</button>
+			</div>
+		</div> 
+		<!-- einde vriendelijst -->
+
+		<!-- voorgesteld vrienden -->
+	<div class="voorgestelde">
+		<div class="titel"><h2> Voorgestelde vrienden </h2> </div>
+			<div class="Prampa">
+				<img src="images/rampa.jpg" alt="Rampa" class="Plijst"/>
+				<p class="Plijstnaam">Rampa</p>
+				<button type="button" id="add1">Toevoegen</button>
+			</div>
+
+			<div class="Psam">
+				<img src="images/sam.jpg" alt="Sam Divine" class="Plijst"/>
+				<p class="Plijstnaam">Sam Divine</p>
+				<button type="button" id="add2">Toevoegen</button>
+			</div>
+	</div> <!-- einde voorgestelde vrienden -->
+	
+	</main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Inloggen bij Beatpoort </title>
+
+<meta name="keywords" content="login">
+<meta name="description" content="Social media webprogrammeren">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Brendan Reterink">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="PageStyle_inlog.css">
+
+<style>
+		label, input{display:block;}
+</style>
+
+<script src="http://code.jquery.com/jquery-1.12.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="inloggen.js"> </script>
+
+</head>
+
+<body background="images/achtergrondsite.jpg">
+
+<div id="pagelayout">
+
+	<div id="loginlayout">  <!-- inlogvenster -->
+		<h2> Inloggen bij Beatpoort </h2>
+		<form> 
+			<input type="text" id="gebruikersnaam" name="invoer"
+			placeholder="Vul hier uw gebruikersnaam in.">
+			<span class="melding"> </span>
+
+			<input type="password" id="wachtwoord" name="invoer"
+			placeholder="Vul hier uw wachtwoord in.">
+			<span class="meldingwachtwoord"> </span><Br>
+			<span class="foutmelding"> </span>
+		</form>
+
+		<form>
+			<input type="button" id= "login" value="Log in" onclick="location.href='timeline.html';" >
+		</form>
+
+	</div> <!-- einde loginlayout-->
+
+	<div id="registreer"> <!-- registreren venster -->
+		<h2> Registreren bij Beatpoort </h2>
+		<form > 
+			<input type="button" id="knopregistreren" onclick="location.href='registreren.html';" value="Registreren" />
+		</form>
+		
+	</div> <!-- einde doorverwijzing-->
+</div>
+
+
+
+</body>
+</html>
