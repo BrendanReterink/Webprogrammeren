@@ -41,7 +41,7 @@ $("#meldingachternaam").html("");
 }
 if (gebruikersnaam == ""){
 $("#meldinggebruikersnaam").html("Gebruikersnaam invullen."); // functionaliteit 2.1
-} else if (gebruikersnaam == "Hekman" || gebruikersnaam == "Koning" || gebruikersnaam == "ErikHekman" || gebruikersnaam == "ThijsWaardenburg" || gebruikersnaam == "Ronald" || gebruikersnaam == "RonaldVanEssen" || gebruikersnaam == ""){
+} else if (gebruikersnaam == "Hekman" || gebruikersnaam == "Koning" || gebruikersnaam == "ErikHekman" || gebruikersnaam == "ThijsWaardenburg" || gebruikersnaam == "Ronald" || gebruikersnaam == "RonaldVanEssen" || gebruikersnaam == "Brendan"){
 $("#meldinggebruikersnaam").html("Deze gebruikersnaam is al in gebruik."); // functionaliteit 2.2
 } else {
 $("#meldinggebruikersnaam").html("");
