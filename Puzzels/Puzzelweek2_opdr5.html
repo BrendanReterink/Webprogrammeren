@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opgave 5 - Valuta berekenen</title>
+	<style>
+		/* voeg zelf commentaar toe */
+		label, input {display: block;}
+		input[type="button"]{margin-top:20px;}
+		#omgerekend {font-size: 40px;}
+	</style>
+</head>
+<body>
+	<!-- Maak nu een formulier en gebruik jouw functie -->
+	<form id="valutaForm" name="valutaForm">
+		<label for="euros">Euros:</label>
+		<input type="number" id="euros" name="euros">
+		
+		
+		<label for="valuta">Valuta (dollar, peso, yen of pond typen):</label>
+		<input type="text" id="valuta" name="valuta">
+
+		<input type="button" value="Valuta omrekenen" onclick="valutaBerekenen()" />
+	</form>
+	<p id="omgerekend"> <!-- hier komt het antwoord --> </p>
+
+
+	<script>
+	
+	var dollar = 1.08;
+	var peso = 18.06;
+	var yen = 132.04;
+	var pond = 0.71;
+	var valutaBerekenen = function(){
+		
+		var euros = document.getElementById('euros').value;
+		var valuta = document.getElementById('valuta').value;
+		if(valuta == "dollar"){euros = euros * dollar}
+		if(valuta == "peso"){euros = euros * peso;}
+		if(valuta == "yen"){euros = euros * yen;}
+		if(valuta == "pond"){euros = euros * pond;}
+        
+        document.getElementById('omgerekend').innerHTML = euros;
+    }
+	</script>
+</body>
+</html>

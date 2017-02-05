@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Opgave 2</title>
+</head>
+<body>
+
+<script>
+	var spaans = ['uno','dos','tres','cuatro','cinco', 'seis', 'siete','ocho', 'nueve', 'diez']; 
+		
+	var invoer = prompt("Voer een cijfer in en ik vertaal het naar Spaans");
+	
+	
+	if (invoer > 10 || invoer < 1) {
+		alert("Dat getal weet ik nog niet");
+	} else {
+		uitvoer = spaans[invoer-1];
+		alert("Het Spaanse woord voor is het getal " + invoer + " is " + uitvoer);
+	}
+</script>
+
+</body>
+</html>

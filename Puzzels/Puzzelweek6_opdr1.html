@@ -1,0 +1,49 @@
++<!doctype html>
++<html>
++<head>
++<meta charset="UTF-8"><title>HTML bewerken vervolg</title>
++<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
++<style>.groen { color: #0F0;}</style>
++</head>
++<body>
++<ul>
++    <li>een</li>
++    <li>twee</li>
++    <li id="foo">drie</li>
++    <li>vier</li>
++    <li>vijf</li>
++</ul>
++<ol>
++    <li>een</li>
++    <li>twee</li>
++    <li>drie</li>
++    <li>vier</li>
++    <li>vijf</li>
++</ol>
++<script>
++//opgave 1
++$('ol li, ul li').wrapInner("<span></span>");
++$('ol li, ul li').append('<img class="edit" src="edit.png" height="12" width="12"><img class="delete" src="delete.png" height="12" width="12">');
++
++//opgave 2
++$('ol, li').css("list-style", "none");
++$('li').css("padding", "10px");
++$('img').css("padding-left", "5px");
++
++//opgave 3
++//$('ol li img[src="delete.png"], ul li img[src="delete.png"]')...
++//maar met een class is het gemakkelijker
++$('.delete').on('click', function(){
++	$(this).parent().remove();
++});
++
++//opgave 4
++//$('ol li img[src="edit.png"], ul li img[src="edit.png"]')...
++//maar met een class is het gemakkelijker
++$('.edit').on('click', function(){
++	var tekst = prompt("tekst aanpassen", $(this).prev().text());
++	$(this).prev().text(tekst);
++});
++</script>
++</body>
++</html>

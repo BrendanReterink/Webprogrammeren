@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML bewerken met Javascript</title>
+<style>
+	.groen {color: #00ff00;}
+</style>
+</head>
+<body>
+<ul>
+    <li>een</li>
+    <li>twee</li>
+    <li id="foo">dri</li>
+    <li>vier</li>
+    <li>vijf</li>
+</ul>
+<ol>
+    <li>een</li>
+    <li>twee</li>
+    <li>drie</li>
+    <li>vier</li>
+</ol>
+<script>
+//opgave 1
+document.getElementById('foo').innerHTML ="drie";
+//opgave 2
+//selecteer ol
+var olElement = document.getElementsByTagName('ol')[0];
+//creeer li-element
+var nieuwElement =  document.createElement('li');
+//li element vullen met de tekst "vijf"
+var tekst = document.createTextNode("vijf");
+//tekst koppelen aan nieuw li element
+nieuwElement.appendChild(tekst);
+//nieuw li element koppelen aan ol element
+olElement.appendChild(nieuwElement);
+//opgave 3
+//selecteer li in ul (querySelector)
+var eersteElement = document.querySelector('ul li');
+//creeer nieuw li-element
+var nieuwElement = document.createElement('li');
+//creeer nieuw textNode met de tekst "nul"
+var tekst = document.createTextNode("nul");
+//koppel textNode aan nieuw li-element
+nieuwElement.appendChild(tekst);
+//voeg nieuw element toe aan het begin
+eersteElement.parentNode.insertBefore(nieuwElement, eersteElement);
+//in jQuery heb je prepend() en append()
+//opgave 4
+//creeer een p-element
+var pElement = document.createElement('p');
+//creeer een textNode met tekst
+var tekst = document.createTextNode("Dit is een interessante tekst");
+//koppel tekst aan p-element
+pElement.appendChild(tekst);
+//koppel p-element aan body
+document.body.appendChild(pElement);
+//opgave 5
+//1px rand toevoegen aan pElement
+pElement.style.border = "1px solid black";
+//opgave 6
+//selecteer li met id foo
+var liElement = document.getElementById('foo');
+//verander id in derde
+liElement.id = "derde";
+//opgave 7
+//selecteer ol op tagname
+var olElement = document.getElementsByTagName('ol')[0];
+//koppel deze aan een class
+olElement.className = "groen";
+</script>
+</body>
+</html>

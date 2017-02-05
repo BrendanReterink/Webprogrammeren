@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opgave 3 - Wachtwoord hetzelfde?</title>
+</head>
+<body>
+	<script>
+	//Maak een functie genaamd vergelijkWachtwoord met twee parameters
+	var vergelijkWachtwoord = function(ww1, ww2){
+		//In de functie vergelijkWachtwoord, vergelijk je het wachtwoord
+		if(ww1 == ww2){
+			//Geef met een alert terug op het klopt
+			alert("Klopt, wachtwoorden zijn gelijk");
+		} else {
+			alert("Fout, wachtwoorden zijn niet gelijk");
+		}
+	}
+	
+	//Maak twee variabelen aan 
+	var wachtwoord1 = "qwerty123";
+	var wachtwoord2 = "qwerty1223";
+	
+	//en gebruik deze als parameter (bij het aanroepen van de functie)
+	vergelijkWachtwoord(wachtwoord1, wachtwoord2);
+	</script>
+</body>
+</html>

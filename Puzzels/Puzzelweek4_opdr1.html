@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Opgave 1</title>
+</head>
+<body>
+
+<script>
+	
+var uitspraken = ["'Ieder nadeel heb zijn voordeel.'<br>","'Als wij de bal hebben kunnen zij niet scoren.'<br>", "'Voordat ik een fout maak, maak ik die fout niet'<br>","'Je gaat het pas zien als je het door hebt.'<br>","'Als Italianen één kans krijgen, maken ze er twee.'<br>", "'Vaak moet er iets gebeuren voordat er iets gebeurt.'<br>"];
+//document.write("Eén voor één");
+//document.write(uitspraken[0]);
+//document.write(uitspraken[1]);
+//document.write(uitspraken[2]);
+//document.write(uitspraken[3]);
+//document.write(uitspraken[4]);
+//document.write(uitspraken[5]);
+//document.write("<br>");
+document.write('<strong>Hier demonstreer ik de <em>for-loop</em></strong><br>');
+for(var i = 0; i < uitspraken.length;i++){
+	document.write(uitspraken[i]);	
+}
+document.write('<br><strong>Hier demonstreer ik de <em>while-loop</em></strong><br>');
+var i = 0;
+while(i < uitspraken.length){
+	document.write(uitspraken[i]);		
+	i++;
+}
+document.write('<br><strong>Hier is de random quote van de dag</strong><br>');
+//random getal tussen 0.0000 en 0.9999
+//alert(Math.random());
+//random getal tussen tussen 0.000 en 4.9999
+//alert(Math.random()*5);
+//getallen afronden
+//alert(Math.round(Math.random()*5));
+document.write(uitspraken[Math.round(Math.random()*5)]);
+</script>
+
+</body>
+</html>

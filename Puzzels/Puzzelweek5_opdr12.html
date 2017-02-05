@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML bewerken met jQuery</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<style>
+    .groen { color: #0F0;}
+</style>
+</head>
+<body>
+<ul>
+    <li>een</li>
+    <li>twee</li>
+    <li id="foo">dri</li>
+    <li>vier</li>
+    <li>vijf</li>
+</ul>
+<ol>
+    <li>een</li>
+    <li>twee</li>
+    <li>drie</li>
+    <li>vier</li>
+</ol>
+<script>
+//opgave 1
+$('#foo').html("drie");
+//opgave 2
+$('ol').append("<li>vijf</li>");
+//opgave 3
+$('ul').prepend("<li>nul</li>");
+//opgave 4
+$('body').append("<p>Dit is ook een interessante tekst</p>");
+//opgave 5
+$('p').css("border", "2px solid black");
+//opgave 6
+$('#foo').attr("id", "drie");
+//opgave 7
+$('ol').addClass("groen");
+//extra
+//voorbeeld van een event en effect in jQuery
+//als je op jet p-element klikt
+$('p').on('click', function(){
+    //klap dan de lijstjes in
+	$('ol, ul').slideToggle();
+});
+</script>
+</body>
+</html>

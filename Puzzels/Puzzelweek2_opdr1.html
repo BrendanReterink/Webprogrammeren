@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opgave 1 - Welk woord is langer?</title>
+</head>
+<body>
+	<!-- Maak een <button> die de functie vergelijkWoorden() aanroept -->
+	<input type="button" value="klik hier" onclick="vergelijkWoorden()" >
+	
+	<script>
+	//Maak een functie genaamd vergelijkWoorden
+	var vergelijkWoorden = function(){
+		//Vraag via de prompt() de twee woorden
+		var woord1 = prompt("woord1?");
+		var woord2 = prompt("woord2?");
+		//Vergelijk de twee woorden met .length
+		if(woord1.length > woord2.length){
+			//Geef terug aan de gebruiker via een alert() welk woord het langst was en uit hoeveel letters het woord bestond
+			alert("Woord 1 is het langst en bevat" + woord1.length + " letters.");
+		} else {
+			alert("Woord 2 is het langst en bevat" + woord2.length + " letters.");
+		}
+	}	
+	</script>
+</body>
+</html>
